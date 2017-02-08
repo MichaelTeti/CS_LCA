@@ -7,8 +7,6 @@ clc;
 im=im2double(imread('monalisa.jpg'));
 im=imresize(im, [size(im, 1)/5, size(im, 2)/5], 'bilinear', 0);
 imsz=size(im);
-imsz
-ddkj
 im=rgb2gray(im);
 im=im(:); 
 n=length(im);
