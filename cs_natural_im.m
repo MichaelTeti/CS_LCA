@@ -5,12 +5,12 @@ close all;
 clc;
 
 im=im2double(imread('monalisa.jpg'));
-im=imresize(im, [size(im, 1)/5, size(im, 2)/5], 'bilinear', 0);
-imsz=size(im);
+im=imresize(im, [size(im, 1)/2, size(im, 2)/2], 'bilinear', 0);
 im=rgb2gray(im);
+imsz=size(im)
 im=im(:); 
 n=length(im);
-m=n/10;
+m=n/2;
 phi=randn(m, n);
 y=phi*im;
 psi=idct(eye(n));
@@ -20,11 +20,14 @@ t=1;
 h=0.0001;
 d=h/t;
 u=zeros(n, 1);
+e=1
 
-for i=1:100
+while e>.1
   a=(u-sign(u).*(lambda)).*(abs(u)>(lambda));
   u=u+d*(D'*(y-D*a)-u-a);
+  rec=psi*a
+  e=mean(rec'*im);
 end
 
-rec=psi*a;
+rec=reshape(rec, imsz(1), imsz(2));
 save('rec.mat', 'rec');
