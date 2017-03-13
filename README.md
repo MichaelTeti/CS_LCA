@@ -67,7 +67,12 @@ The second line is the activation function of each
 node, which causes nodes with activations below
 threshold to output nothing. In all, the network outputs
 a sparse solution that approximates, or sometimes
-equals, the original image.
+equals, the original image.  
+  
+## Code
+- [Sparse Vector](https://github.com/MichaelTeti/CS_LCA/blob/master/cs_tensorflow.py) - This is a code written in Tensorflow that uses the LCA-CS method to reconstruct a compressively sensed sparse vector.  
+  
+- [Natural Image](https://github.com/MichaelTeti/CS_LCA/blob/master/cs_dct.py) - This code shows how to compressively sense and recover a natural image that is not canonically sparse. 
 
 ## Results
 ### Reconstructions of an image with different sampling rates.
