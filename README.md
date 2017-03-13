@@ -53,7 +53,7 @@ lambda = 4.0
 h = 0.005  
 u = zeros(n, 1)  
 While MSE is above some value:  
-u = u + h  (A' x (b − A*x*) − u − *x*)  
+u = u + h x (A' x (b − A*x*) − u − *x*)  
 x=(u-sign(u).*(lambda)).*(abs(u)>(lambda))  
   
 The variable u is the input layer, h is a scale constant, and lambda is the threshold. As can be seen, the algorithm is extremely simple
