@@ -25,7 +25,7 @@ compressed measurement vector b.
 <p align="center">
   <b>Figure 2: To sample, multiply x by a random m x n Gaussian matrix.</b><br>
   <br><br>
-  <img src="https://github.com/MichaelTeti/CS_LCA/blob/master/ax%3Db.jpgg">
+  <img src="https://github.com/MichaelTeti/CS_LCA/blob/master/ax%3Db.jpg">
 </p>
   
 To get back x from b, you have to minimize the MSE between Ax and b plus the sum of x. We add the sum of x to the minimization problem because the correct solution is sparse (i.e. has a lot of zeros). Current methods require hundreds of lines of code to solve this problem. If only there was a more simple, faster way ...  
