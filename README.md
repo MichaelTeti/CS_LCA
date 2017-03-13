@@ -41,7 +41,7 @@ output, as well as inhibit nearby, similar nodes (red
 arrows in Fig. 1) in proportion to its activation.  
   
 <p align="center">
-  <b>Figure 3: The network's weihts change over time to minimize the reconstruction error.</b><br>
+  <b>Figure 3: The network's weights change over time to minimize the reconstruction error.</b><br>
   <br><br>
   <img src="https://github.com/MichaelTeti/LCA_Sparse_Coding_WadingBirds/blob/master/LCA1.jpg">
 </p>
@@ -72,13 +72,13 @@ equals, the original image.
 ## Results
 ### Reconstructions of an image with different sampling rates.
 <p align="center">
-  <b>Figure 3: The network's weihts change over time to minimize the reconstruction error.</b><br>
   <br><br>
   <img src="https://github.com/MichaelTeti/CS_LCA/blob/master/circles.png">
-</p>
+</p>  
+  
+
 ### Reconstruction of a natural image. 
 <p align="center">
-  <b>Figure 3: The network's weihts change over time to minimize the reconstruction error.</b><br>
   <br><br>
   <img src="https://github.com/MichaelTeti/CS_LCA/blob/master/mona_lca_l1_l2_orig.png">
 </p>
