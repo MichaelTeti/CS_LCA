@@ -53,8 +53,8 @@ We send A, x, and b to the network and, over time, it will settle on a sparse ap
 >h = 0.005  
 >u = zeros(n, 1)  
 >While MSE is above some value:  
->u = u + h x (A' x (b − A*x*) − u − *x*)  
->x=(u-sign(u).*(lambda)).*(abs(u)>(lambda))  
+>u = u + h x (A' x (b − A**x**) − u − **x**)  
+>**x**=(u-sign(u) x (lambda)) x (abs(u)>(lambda))  
   
 The variable u is the input layer, h is a scale constant, and lambda is the threshold. As can be seen, the algorithm is extremely simple
 and efficient. Furthermore, it is a vectorized implementation,
