@@ -72,7 +72,7 @@ equals, the original image.
 ## Code
 - [Sparse Vector](https://github.com/MichaelTeti/CS_LCA/blob/master/cs_tensorflow.py) - This is a code written in Tensorflow that uses the LCA-CS method to reconstruct a compressively sensed sparse vector.  
   
-- [Natural Image](https://github.com/MichaelTeti/CS_LCA/blob/master/cs_dct.py) - This code shows how to compressively sense and recover a natural image that is not canonically sparse. 
+- [Natural Image](https://github.com/MichaelTeti/CS_LCA/blob/master/cs_dct.py) - This code shows how to compressively sense and recover a natural image that is not canonically sparse. Here, the sampling process is the same as those signals that are inherently sparse, but the recovery process includes a dictionary appropriate for the basis in which the signal is sparse. Here we use the DCT dictionary. 
 
 ## Results
 ### Reconstructions of an image with different sampling rates.
