@@ -88,7 +88,7 @@ equals, the original image.
   <img src="https://github.com/MichaelTeti/CS_LCA/blob/master/mona_lca_l1_l2_orig.png">
 </p>
 
-The locally-competitive algorithm method is able to approximately reconstruct the signal in almost 9 times less time than the current state-of-the-art method. 
+The locally-competitive algorithm method is able to approximately reconstruct the signal in almost **9 times less time** than the current state-of-the-art method. 
 
 ## Further Reading
 - [LCA](https://www.google.com/patents/US7783459) 
