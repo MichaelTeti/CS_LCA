@@ -20,13 +20,11 @@ t=1;
 h=0.0001;
 d=h/t;
 u=zeros(n, 1);
-e=1
 
 while e>.1
   a=(u-sign(u).*(lambda)).*(abs(u)>(lambda));
   u=u+d*(D'*(y-D*a)-u-a);
   rec=psi*a
-  e=mean(rec'*im);
 end
 
 rec=reshape(rec, imsz(1), imsz(2));
