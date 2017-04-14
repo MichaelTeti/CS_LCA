@@ -17,8 +17,8 @@ h=tf.constant(.0005) # scale constant
 
 # LCA
 with tf.Session() as sess:
+  sess.run(tf.global_variables_initializer())
   for i in range(200):
-    sess.run(tf.global_variables_initializer())
     a=(u-tf.sign(u)*lamb)*(tf.cast(tf.abs(u)>lamb, tf.float32)) 
     u=u+h*(tf.matmul(tf.transpose(D), (y-tf.matmul(D, a)))-u-a) 
   a=tf.round(a)
